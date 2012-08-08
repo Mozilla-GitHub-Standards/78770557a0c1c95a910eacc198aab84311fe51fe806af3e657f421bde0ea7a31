@@ -43,4 +43,5 @@ CRESPO4G_BLOBS="akm-crespo4g-imm76d-c1380907.tgz
 CSUM_LIST="$PWD/blob-shasums"
 
 cd ../../.. &&
-install_blobs nexus-s-4g "$CRESPO4G_BLOBS" "$CSUM_LIST"
+install_blobs nexus-s-4g "$CRESPO4G_BLOBS" "$CSUM_LIST" &&
+rm vendor/samsung/crespo4g/proprietary/Android.mk
